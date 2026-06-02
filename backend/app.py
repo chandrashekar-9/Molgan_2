@@ -30,7 +30,6 @@ import pandas as pd
 import numpy as np
 from rdkit import Chem
 from rdkit.Chem import Draw, Descriptors, QED, AllChem
-from IPython.display import display
 import io
 import base64
 from rdkit.Chem.Draw import rdMolDraw2D
@@ -45,7 +44,6 @@ model_globals = {
     'Draw': Draw,
     'Descriptors': Descriptors,
     'QED': QED,
-    'display': display,
     'os': os,
     'device': torch.device("cuda" if torch.cuda.is_available() else "cpu"),
     'MAX_ATOMS': 9,
